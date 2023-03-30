@@ -94,13 +94,13 @@ func TestCreateFromReport(t *testing.T) {
 						Name:      "TestSkip",
 						Classname: "package/name",
 						Time:      "0.000",
-						Skipped:   &Result{Message: "Skipped"},
+						Skipped:   &Result{Message: "Skipped", Data: "None"},
 					},
 					{
 						Name:      "TestIncomplete",
 						Classname: "package/name",
 						Time:      "0.000",
-						Error:     &Result{Message: "No test result found"},
+						Error:     &Result{Message: "No test result found", Data: "None"},
 					},
 					{
 						Classname: "Build error",
@@ -193,8 +193,8 @@ func TestWriteXML(t *testing.T) {
 
 	var suites Testsuites
 
-	ts := Testsuite{Name:"Example"}
-	ts.AddTestcase(Testcase{Name: "Test", })
+	ts := Testsuite{Name: "Example"}
+	ts.AddTestcase(Testcase{Name: "Test"})
 	suites.AddSuite(ts)
 
 	var buf bytes.Buffer

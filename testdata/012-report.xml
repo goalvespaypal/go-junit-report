@@ -5,7 +5,7 @@
 			<property name="go.version" value="1.0"></property>
 		</properties>
 		<testcase name="TestSubtests" classname="package/subtests" time="0.000">
-			<failure message="Failed"></failure>
+			<failure message="Failed"><![CDATA[None]]></failure>
 		</testcase>
 		<testcase name="TestSubtests/Subtest" classname="package/subtests" time="0.000">
 			<system-out><![CDATA[    subtests_test.go:7: ok]]></system-out>
@@ -21,7 +21,7 @@
 		<testcase name="TestNestedSubtests/a#1/b#1" classname="package/subtests" time="0.000"></testcase>
 		<testcase name="TestNestedSubtests/a#1/b#1/c#1" classname="package/subtests" time="0.000"></testcase>
 		<testcase name="TestFailingSubtestWithNestedSubtest" classname="package/subtests" time="0.000">
-			<failure message="Failed"></failure>
+			<failure message="Failed"><![CDATA[None]]></failure>
 		</testcase>
 		<testcase name="TestFailingSubtestWithNestedSubtest/Subtest" classname="package/subtests" time="0.000">
 			<failure message="Failed"><![CDATA[    subtests_test.go:31: Subtest error message]]></failure>

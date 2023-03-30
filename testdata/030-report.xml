@@ -27,7 +27,7 @@ single-line stdout]]></failure>
         error]]></failure>
 		</testcase>
 		<testcase name="TestFailWithNoTestOutput" classname="package/stdout" time="0.000">
-			<failure message="Failed"></failure>
+			<failure message="Failed"><![CDATA[None]]></failure>
 		</testcase>
 		<testcase name="TestPassWithStdoutAndTestOutput" classname="package/stdout" time="0.000">
 			<system-out><![CDATA[multi
@@ -53,7 +53,7 @@ single-line stdout]]></system-out>
 		</testcase>
 		<testcase name="TestPassWithNoTestOutput" classname="package/stdout" time="0.000"></testcase>
 		<testcase name="TestSubtests" classname="package/stdout" time="0.000">
-			<failure message="Failed"></failure>
+			<failure message="Failed"><![CDATA[None]]></failure>
 		</testcase>
 		<testcase name="TestSubtests/TestFailWithStdoutAndTestOutput" classname="package/stdout" time="0.000">
 			<failure message="Failed"><![CDATA[multi
@@ -78,7 +78,7 @@ single-line stdout]]></failure>
         error]]></failure>
 		</testcase>
 		<testcase name="TestSubtests/TestFailWithNoTestOutput" classname="package/stdout" time="0.000">
-			<failure message="Failed"></failure>
+			<failure message="Failed"><![CDATA[None]]></failure>
 		</testcase>
 		<testcase name="TestSubtests/TestPassWithStdoutAndTestOutput" classname="package/stdout" time="0.000">
 			<system-out><![CDATA[multi

@@ -251,6 +251,10 @@ func formatDuration(d time.Duration) string {
 
 // formatOutput combines the lines from the given output into a single string.
 func formatOutput(output []string) string {
+	if len(output) == 0 {
+		return "None"
+	}
+
 	return escapeIllegalChars(strings.Join(output, "\n"))
 }
 
